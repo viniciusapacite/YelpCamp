@@ -1,0 +1,130 @@
+@media screen and (max-width:768px){
+    div.img-2 {
+        display: block;
+    }
+
+    div.menu-toggle {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    div.menu-toggle > img{
+        display: none;
+    }
+
+    div.img-2 > img{
+        display: none;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:768px){
+    div.box-center .content .campus {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.box-center .content .campus > input[type=submit]{
+        padding: 20px 0;
+        max-width: 300px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.935);
+    }
+
+    section.boxes {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        gap: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .boxes .boxeOne {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .box-left > img {
+        display: none;
+        z-index: 10;
+    }
+
+    .box-right {
+        display: none;
+        z-index: 10;
+        position: relative;
+        left: -40%;
+        top: 0;
+        z-index: 10;
+        transition: 1s all;
+    }
+
+    .box-right > a {
+        display: block;
+        line-height: 50px;
+        z-index: 10;
+        transition: 1s all;
+    }
+
+    .box-left {
+        display: none;
+        width: 100%;
+        z-index: 10;
+        position: relative;
+        left: -38%;
+        transition: 1s all;
+       
+    } 
+
+    .box-left > a {
+        float: right;
+        margin-top: 2rem;
+        z-index: 10;
+    }
+
+    .menu-toggle {
+        float: right;
+        background-color: #F9F6F1;
+        border-radius: 4px;
+        cursor: pointer;
+        z-index: 10;
+        transition: 1s all;
+    }
+
+    .menu-toggle > img {
+        width: 50px;
+        max-width: 100%;
+        height: 40px;
+    }
+} 
+
+
+@media screen and (max-width:1024px){
+    html, body  {
+        font-size: 100%;
+    }
+
+    div.center {
+        padding: 0 10%;
+    }
+
+    section.boxes, section.boxes2 {
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 90px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    div.boxeOne {
+        width: 0%;
+        max-width: 100%;
+    }
+    
+}
