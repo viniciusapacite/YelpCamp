@@ -20,18 +20,39 @@
 }
 
 @media screen and (min-width:300px) and (max-width:768px){
+
+    div.center {
+        padding: 0 0%;
+    }
     div.box-center .content .campus {
         width: 100%;
-        max-width: 300px;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    div.box-center .content .campus > input[type=submit]{
+    div.box-center .content .campus > input[type=submit],
+    div.box-center .content .campus > input[type=search]{
         padding: 20px 0;
-        max-width: 300px;
+        max-width: 100%;
         font-weight: 600;
         color: rgba(255, 255, 255, 0.935);
+        max-width: 350px;
+    }
+
+    div.box-center .content > a {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    div.box-center .content  {
+        width: 100%;
+        max-width: 300px;
+        margin:  0 auto;
+    }
+
+    div.box-center {
+        padding:4rem 2rem;
     }
 
     section.boxes {
@@ -110,7 +131,7 @@
     }
 
     div.center {
-        padding: 0 10%;
+        padding: 0 5%;
     }
 
     section.boxes, section.boxes2 {
@@ -123,8 +144,9 @@
     }
 
     div.boxeOne {
-        width: 0%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 300px;
+        gap: 20px;
     }
     
 }
