@@ -1,6 +1,4 @@
-
-
-    function AbrirMenu(){
+ function AbrirMenu(){
         var menu = document.querySelector('.menu-toggle')
         .addEventListener('click',()=>{
         var boxLeft = document.querySelectorAll('div.box-left');
@@ -19,10 +17,32 @@
                 boxLeft[i].style.display = 'none';
             }
             console.log(boxRight);
-           }
-          
+           }  
         }
     })
 }
-
 AbrirMenu();
+
+const filterElement = document.querySelector('.campus > input[type=search]');
+const cards = document.querySelectorAll('.boxeOne');
+filterElement.addEventListener('input', filterCards);
+
+function filterCards() {
+    if(filterElement != ''){
+        for(let card of cards){
+            let title = card.querySelector('h4');
+            title = title.textContent.toLowerCase();
+            let filterText = filterElement.value.toLowerCase() 
+            if(!title.includes(filterText)){
+                card.style.display = 'none';
+            }
+            else {
+                card.style.display = 'block';
+            }
+        }
+    }else {
+        for (let card of cards){
+            card.style.display = 'block';
+        }
+    }
+}
