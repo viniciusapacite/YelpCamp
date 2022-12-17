@@ -31,7 +31,7 @@ div.wi50 {
     background-size: cover;
 
     background-position: center;
-    background-image: url(../imagens/Hero.jpg) !important;
+    background-image: url("../imagens/Hero.jpg") ;
 }
 
 .center {

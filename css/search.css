@@ -73,8 +73,8 @@ div.box-left > a {
     position: relative;
     top: -5px;
     padding: 0 30px;
-    font-weight: 700;
-    color: #75726D;
+    font-weight: 500;
+    color: #75726dce;
 }
 
 div.box-right > a {
@@ -84,6 +84,14 @@ div.box-right > a {
     text-decoration: none;
     padding: 0 10px;
     color: #75726D;
+}
+div.box-right > a:nth-child(2){
+    background-color: #000;
+    padding: 
+     15px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
 }
 
 div.box-right {
@@ -211,6 +219,6 @@ div.boxeOne > p {
 }
 
 div.space {
-    height: 200px;
+    height: 100px;
 }
 

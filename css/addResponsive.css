@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width:300px) and (max-width:992px){
-    .menu {
+    nav.menu {
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -22,6 +22,8 @@
         border-radius: 4px;
     }
 
+
+
     .menu  > a {
         text-align: center;
         position: relative;
@@ -29,6 +31,12 @@
         margin: 20px;
         z-index: 10;
         width: 100%;
+  
+        background-color: #F9F6F1;
+    }
+
+    .menu  > a:nth-child(2){
+        padding: 10px;
     }
 
     div.logo >  a  {

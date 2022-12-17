@@ -43,6 +43,8 @@
 }
 
 @media screen and (min-width:300px) and (max-width:992px){
+    
+    
     div.box-right {
         display: flex;
         flex-direction: column;
@@ -81,12 +83,10 @@
     .logo > a {
         display:none;
         position: absolute;
-        top: 11rem;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 70%;
-        
-        text-align: center;
+        top: 19%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 15px;
     }
 
     .logo > img {
@@ -122,7 +122,7 @@
     }
 
     .center {
-        padding: 0 5%;
+        padding: 0 4%;
     }
 
     .menu-toggle {
