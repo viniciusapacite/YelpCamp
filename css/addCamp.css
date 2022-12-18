@@ -64,7 +64,7 @@ header.cabeça {
 .logo {
     float: left;
     width: 100%;
-    max-width: 700px;
+    max-width: 500px;
     text-align: left;
 }
 
@@ -80,13 +80,13 @@ header.cabeça {
 .menu > a:nth-child(2){
     padding:  15px;
     position: relative;
-    top: -11px;
+    top: 0;
     background-color: #151515;
     border-radius: 4px;
     color: white;
     font-size: 14px;
     width: 100%;
-    max-width: 200px;
+    max-width: 100px;
 }
 
 form > h1 {
