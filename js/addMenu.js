@@ -3,13 +3,15 @@
     function AbrirMenu(){
         var menu = document.querySelector('.img-2')
         .addEventListener('click',()=>{
-        var menuOrigin = document.querySelectorAll('.menu');
+        var menuMobile = document.querySelectorAll('.menu-mobile ul');
  
-        for(var i = 0; i < menuOrigin.length;i++ ){
-           if( menuOrigin[i].style.display == 'none'){
-                menuOrigin[i].style.display = 'flex';
+        for(var i = 0; i < menuMobile.length;i++ ){
+           if( menuMobile[i].style.display == 'flex'){
+                menuMobile[i].style.display = 'none';
+                var trocarImg = document.querySelector('.img-2 > img').src = 'imagens/Hamburger Menu.svg';
            }else {
-                menuOrigin[i].style.display = 'none';
+                menuMobile[i].style.display = 'flex';
+                var trocarImg = document.querySelector('.img-2 > img').src = 'imagens/close.svg';
            }
                   
         }})

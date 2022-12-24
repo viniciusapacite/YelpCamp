@@ -14,6 +14,10 @@ header.cabeça {
     background-color: #000;
 }
 
+div.clear { 
+    clear: both;
+}
+
 .cabeça > p {
     color: white;
     text-align: center;

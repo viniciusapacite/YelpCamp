@@ -191,6 +191,7 @@ div.boxeOne {
 div.boxeOne > img {
     width: 100%;
     max-width: 500px;
+    height: 55%;
     border-radius: 4px;
 }
 

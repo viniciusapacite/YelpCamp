@@ -1,26 +1,20 @@
  function AbrirMenu(){
         var menu = document.querySelector('.menu-toggle')
         .addEventListener('click',()=>{
-        var boxLeft = document.querySelectorAll('div.box-left');
-        var boxRight = document.querySelectorAll('div.box-right ');
-        for(var i = 0; i < boxRight.length;i++ ){
-           if( boxRight[i].style.display == 'none' ){
-                boxRight[i].style.display = 'block';
+        var menuMobile = document.querySelectorAll('.menu-mobile ul');
+        console.log(menuMobile)
+        for(var i = 0; i < menuMobile.length;i++ ){
+           if( menuMobile[i].style.display == 'flex' ){
+                menuMobile[i].style.display = 'none';
+                var trocarImg = document.querySelector('.menu-toggle > img').src = 'imagens/Hamburger Menu.svg';
            }else {
-                boxRight[i].style.display = 'none';
+                menuMobile[i].style.display = 'flex';
+                var trocarImg = document.querySelector('.menu-toggle > img').src = 'imagens/close.svg';
            }
-
-           for(var i = 0; i < boxLeft.length;i++ ){
-             if(boxLeft[i].style.display == 'none'){
-                boxLeft[i].style.display = 'block';
-             }else {
-                boxLeft[i].style.display = 'none';
-            }
-            console.log(boxRight);
-           }  
         }
     })
 }
+
 AbrirMenu();
 
 const filterElement = document.querySelector('.campus > input[type=search]');

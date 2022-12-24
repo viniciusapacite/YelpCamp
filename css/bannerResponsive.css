@@ -53,6 +53,7 @@
         background-size: cover;
         position: relative;
         text-align: center;
+        object-fit: cover;
    }
 
    main.content {
