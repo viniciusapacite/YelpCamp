@@ -183,6 +183,7 @@ section.boxes2 {
 div.boxeOne {
     width: 100%;
     max-width: 370px;
+    height: 100%;
     border:1px solid #75726d79;
     padding: 18px;
     border-radius: 4px;
@@ -191,7 +192,9 @@ div.boxeOne {
 div.boxeOne > img {
     width: 100%;
     max-width: 500px;
-    height: 55%;
+    height: 100%;
+    max-height: 185px;
+ 
     border-radius: 4px;
 }
 
