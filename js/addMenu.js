@@ -12,9 +12,8 @@
            }else {
                 menuMobile[i].style.display = 'flex';
                 var trocarImg = document.querySelector('.img-2 > img').src = 'imagens/close.svg';
-           }
-                  
-        }})
+        }          
+}})
 }
 
 AbrirMenu();
