@@ -8,6 +8,12 @@
         display: block;
     }
 }
+@media screen and (min-width:992px) 
+{
+    div.menu-mobile > ul{
+        display: none;
+    }
+}
 
 @media screen and (min-width:300px) and (max-width:992px){
     html,body{

@@ -12,6 +12,10 @@ html,body {
     clear: both;
 }
 
+div.menu-mobile > ul{
+    display: none;
+}
+
 div.menu-toggle > img{
     display: none;
 }
